@@ -18,3 +18,4 @@ body{-webkit-text-size-adjust:none;background:#5a5959 url(../images/menuBg.gif) 
 .ui-body-c{background-color:#fff;line-height:18px;}.ui-bar-a{background:-webkit-gradient(linear,left top,left bottom,color-stop(1%,rgba(255,255,255,1)),color-stop(100%,rgba(200,200,200,1)));border:none!important;border-bottom:solid #878787 1px!important;color:#000!important;text-shadow:0 1px 1px #fff;height:42px!important;}
 .active{color:#fff;background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(30,29,29,1)),color-stop(21%,rgba(56,55,55,1)));text-shadow:0 1px 1px #000;}
 .ui-btn-corner-all{-webkit-border-radius:0!important;border-radius:0!important;}
+.ui-header {position: fixed;width: 100%;}
