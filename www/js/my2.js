@@ -100,7 +100,10 @@ $(function () {
 		},1000);
 	});
 
-	var setNow= function(){$('#txIda').val((new Date()).getHours() + ':' + (new Date()).getMinutes());};
+	var setNow= function(){
+		$('#txIda').val((new Date()).getHours() + ':' + (new Date()).getMinutes()); 
+		$('#select-native-fc').val('yes');
+	};	
 	$('#select-native-fc').change(setNow);
 	$('#select-native-fc').click(setNow);
 
