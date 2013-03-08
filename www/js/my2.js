@@ -6,7 +6,7 @@ $(function () {
 	var myOptions2 = {
 	    zoom: 11,
 	    center: new google.maps.LatLng(-22.907072809355967, -43.21398052978515),
-	    mapTypeId: 'satellite'
+	    mapTypeId: google.maps.MapTypeId.ROADMAP
 	};
 
 	map2 = new google.maps.Map($('#map_canvas2')[0], myOptions2);
@@ -100,9 +100,9 @@ $(function () {
 		},1000);
 	});
 
-
-	$('#select-native-fc').change(function(){$('#txIda').val((new Date()).getHours() + ':' + (new Date()).getMinutes()); });
-
+	var setNow= function(){$('#txIda').val((new Date()).getHours() + ':' + (new Date()).getMinutes());};
+	$('#select-native-fc').change(setNow);
+	$('#select-native-fc').click(setNow);
 
 	$('#wannaRide').click(function(){
 
@@ -143,7 +143,10 @@ $(function () {
 
 	    setTimeout(function(){
 	   		$.mobile.loading('hide');
+
+	    	setTimeout(function(){
 				$('#btFOI').click();
+	    	},1000);
 
 	    },10000);
 
