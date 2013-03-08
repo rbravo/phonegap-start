@@ -130,7 +130,8 @@ $(function () {
 	$('a[href="#mapa"]').click(function(){
 		setTimeout(function(){
 			google.maps.event.trigger(map, 'resize');
-		},500);
+			calcRoute();
+		},1000);
 	});
 });
 

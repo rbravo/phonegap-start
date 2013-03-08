@@ -35,10 +35,10 @@
     <div id="menu">
         <h3>Menu</h3>
             <ul>
-                <li class="active"><a href="#home" class="contentLink">Home </a></li>
-                <li><a href="#home" class="contentLink">About </a></li>
-                <li><a href="#home" class="contentLink">Portfolio </a></li>
-                <li><a href="#home" class="contentLink">Contact </a></li>
+                <li class="active"><a href="#home" class="contentLink">Meus trajetos </a></li>
+                <li><a href="#home" class="contentLink">Caronas </a></li>
+                <li><a href="#home" class="contentLink">Minha conta </a></li>
+                <li><a href="#home" class="contentLink">Histórico </a></li>
             </ul>
         </div>
         <div data-role="page" class="pages" id="home">
@@ -49,16 +49,16 @@
             <div data-role="content">
                 <ul data-role="listview" data-inset="true" id="ullista">
                     <li data-role="list-divider">Meus trajetos</li>
-                    <li><a href="#mapa">
+                    <li><a href="#mapa" data-transition="slide">
                         <h2>Trabalho</h2>
                         <p><strong>Av Glaucio Gil 777 <b style="padding:6px;">-</b> Av Americas 500</strong></p>
                         <p style="text-transform:none;">Estimativa de tempo nas condições atuais: 50 min</p>
                         <p class="ui-li-aside"><strong>31 </strong>caronas fornecidas</p>
                     </a></li>
-                    <li><a href="#mapa">
+                    <li><a href="#mapa" data-transition="slide">
                         <h2>Faculdade</h2>
-                        <p><strong>Av Glaucio Gil 777 &lt;-&gt; Av Marques de São Vicente 225</strong></p>
-                        <p>Estimativa de tempo nas condições atuais: 1:30 h</p>
+                        <p><strong>Av Glaucio Gil 777 <b style="padding:6px;">-</b> Av Marques de São Vicente 225</strong></p>
+                        <p style="text-transform:none;">Estimativa de tempo nas condições atuais: 1:30 h</p>
                         <p class="ui-li-aside"><strong>55 </strong>caronas fornecidas</p>
                     </a></li>
                 </ul>
@@ -70,8 +70,8 @@
                 <h1>Trabalho</h1>
             </div><!-- /header -->
             <div data-role="content">
-                <a href="#home" data-role="button" data-icon="arrow-l" data-iconpos="left" data-inline="true">Voltar</a>
-                <a href="#home" data-role="button" data-icon="edit" data-iconpos="left" data-inline="true" style="float:right;">Salvar alterações</a>
+                <a href="#home" data-transition="slide" data-role="button" data-icon="arrow-l" data-iconpos="left" data-inline="true">Voltar</a>
+                <a href="#home" data-transition="slide" data-role="button" data-icon="edit" data-iconpos="left" data-inline="true" style="float:right;">Salvar alterações</a>
                 <div id="mapao">
                     <b>De: </b>
                     <input type="text" id="start" value="RJ, Av Glaucio Gil 777" />
